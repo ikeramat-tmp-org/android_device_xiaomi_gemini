@@ -35,7 +35,7 @@
 
     <!-- Names of the key handler classes -->
     <string-array name="config_deviceKeyHandlerClasses" translatable="false">
-        <item>org.lineageos.settings.device.KeyHandler</item>
+        <item>org.aospextended.settings.device.KeyHandler</item>
     </string-array>
 
     <!-- Hardware keys present on the device, stored as a bit field.
@@ -66,14 +66,12 @@
          config to 7. -->
     <integer name="config_deviceHardwareWakeKeys">65</integer>
 
-    <!-- Button backlight control. Possible values are:
-            0 - Not supported
-            1 - Supported, but only on/off mode
-            2 - Supported with variable brightness control
-    -->
-    <integer name="config_deviceSupportsButtonBrightnessControl">2</integer>
+    <bool name="config_button_brightness_support">true</bool>
 
     <!-- Whether to cleanup fingerprints upon connection to the daemon and when
          user switches -->
     <bool name="config_cleanupUnusedFingerprints">false</bool>
+
+    <!-- True if the home button has the ability to wake up phone from lockscreen-->
+    <bool name="config_HomeWakeButton">true</bool>
 </resources>
